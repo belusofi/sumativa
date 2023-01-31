@@ -1,0 +1,16 @@
+version: '3'
+services:
+  postgres-sql:
+    image: postgres:alpine
+    environment:
+      POSTGRES_PASSWORD: postgres
+    pgadmin:
+      image: dpage:pgadmin4
+      enviorenment:
+        PGADMIN_DEFAULT_EMAIL: belusofi17@gmail.com
+        PGADMIN_DEFAULT_PASSWORD: admin
+  #book-service:
+   #  image: <nombre>
+   # enviroment:
+    #  DB_USER: postgres
+     # DB_
